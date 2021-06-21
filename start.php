@@ -18,7 +18,6 @@ if (method_exists('Dotenv\Dotenv', 'createUnsafeImmutable')) {
 } else {
     Dotenv::createMutable(base_path())->load();
 }
-
 Config::load(config_path(), ['route', 'container']);
 $config = config('server');
 
