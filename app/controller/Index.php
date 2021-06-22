@@ -2,7 +2,7 @@
 namespace app\controller;
 
 use support\Request;
-use think\Db;
+use think\facade\Db;
 
 class Index
 {
