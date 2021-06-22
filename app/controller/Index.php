@@ -1,14 +1,14 @@
 <?php
 namespace app\controller;
 
-use support\Db;
 use support\Request;
+use think\Db;
 
 class Index
 {
     public function index(Request $request)
     {
-        $user = Db::table('links')->where('name', '白俊遥博客')->first();
+        $user = Db::table('links')->where('name', '白俊遥博客')->find();
         return json(['code' => 0, 'msg' => 'ok','data'=>$user]);
     }
 
