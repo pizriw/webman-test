@@ -14,10 +14,12 @@ class Index
         // 队列名
         $queue = 'send_mail';
         // 数据，可以直接传数组，无需序列化
-        for ($i = 0; $i < 10000; $i++) {
-            // 投递延迟消息，消息会在60秒后处理
-            Client::send($queue, $user);
-        }
+        $data = ['to' => 'tom@gmail.com', 'content' => 'hello'];
+        // 投递消息
+        Client::send($queue, $data, 10);
+        // 投递延迟消息，消息会在60秒后处理
+        Client::send($queue, $data, 60);
+
         return json(['code' => 0, 'msg' => 'ok', 'data' => $user]);
     }
 
