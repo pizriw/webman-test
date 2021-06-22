@@ -16,7 +16,7 @@ class Index
         // 数据，可以直接传数组，无需序列化
         for ($i = 0; $i < 10000; $i++) {
             // 投递延迟消息，消息会在60秒后处理
-            Client::send($queue, $user->toArray(), 10);
+            Client::send($queue, $user, 10);
         }
         return json(['code' => 0, 'msg' => 'ok', 'data' => $user]);
     }
