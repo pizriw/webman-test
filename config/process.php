@@ -52,14 +52,14 @@ return [
             'consumer_dir' => app_path() . '/queue/redis'
         ]
     ],
-    'stomp_consumer'  => [
-        'handler'     => Webman\Stomp\Process\Consumer::class,
-        'count'       => 2, // 进程数
-        'constructor' => [
-            // 消费者类目录
-            'consumer_dir' => app_path() . '/queue/stomp'
-        ]
-    ],
+//    'stomp_consumer'  => [
+//        'handler'     => Webman\Stomp\Process\Consumer::class,
+//        'count'       => 2, // 进程数
+//        'constructor' => [
+//            // 消费者类目录
+//            'consumer_dir' => app_path() . '/queue/stomp'
+//        ]
+//    ],
     'task'  => [
         'handler'  => process\Task::class
     ],
