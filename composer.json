@@ -29,7 +29,11 @@
     "monolog/monolog": "^2.0",
     "vlucas/phpdotenv": "4.0",
     "topthink/think-orm": "^2.0",
-    "illuminate/database": "7.0"
+    "illuminate/database": "7.0",
+    "webman/redis-queue": "^1.0",
+    "webman/stomp": "^1.0",
+    "workerman/validation": "^3.0",
+    "workerman/crontab": "^1.0"
   },
   "suggest": {
     "ext-event": "For better performance. "

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4c47dd078737f11641411a6b5a855c53",
+    "content-hash": "d89cf4b124ff97b4b7b2d284924da00f",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -827,6 +827,62 @@
                 "simple-cache"
             ],
             "time": "2017-10-23T01:57:42+00:00"
+        },
+        {
+            "name": "respect/stringifier",
+            "version": "0.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Respect/Stringifier.git",
+                "reference": "e55af3c8aeaeaa2abb5fa47a58a8e9688cc23b59"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Respect/Stringifier/zipball/e55af3c8aeaeaa2abb5fa47a58a8e9688cc23b59",
+                "reference": "e55af3c8aeaeaa2abb5fa47a58a8e9688cc23b59",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.8",
+                "malukenho/docheader": "^0.1.7",
+                "phpunit/phpunit": "^6.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Respect\\Stringifier\\": "src/"
+                },
+                "files": [
+                    "src/stringify.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Respect/Stringifier Contributors",
+                    "homepage": "https://github.com/Respect/Stringifier/graphs/contributors"
+                }
+            ],
+            "description": "Converts any value to a string",
+            "homepage": "http://respect.github.io/Stringifier/",
+            "keywords": [
+                "respect",
+                "stringifier",
+                "stringify"
+            ],
+            "time": "2017-12-29T19:39:25+00:00"
         },
         {
             "name": "symfony/console",
@@ -1900,6 +1956,304 @@
                 "php"
             ],
             "time": "2020-11-12T00:07:28+00:00"
+        },
+        {
+            "name": "webman/redis-queue",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webman-php/redis-queue.git",
+                "reference": "86d0d9759deaaa62f22bce23b134ea445dfa4fc3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webman-php/redis-queue/zipball/86d0d9759deaaa62f22bce23b134ea445dfa4fc3",
+                "reference": "86d0d9759deaaa62f22bce23b134ea445dfa4fc3",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "workerman/redis-queue": "^1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Webman\\RedisQueue\\": "./src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "Message queue system written in PHP for webman.",
+            "time": "2020-11-06T13:45:39+00:00"
+        },
+        {
+            "name": "webman/stomp",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webman-php/stomp.git",
+                "reference": "00245e5c51b6c7d7f3c84140e7b248c7e7342234"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webman-php/stomp/zipball/00245e5c51b6c7d7f3c84140e7b248c7e7342234",
+                "reference": "00245e5c51b6c7d7f3c84140e7b248c7e7342234",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "workerman/stomp": "^1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Webman\\Stomp\\": "./src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "Stomp client written in PHP for webman.",
+            "time": "2020-10-29T08:18:56+00:00"
+        },
+        {
+            "name": "workerman/crontab",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/walkor/crontab.git",
+                "reference": "1a37a941e53ca09e9f10f34132001d624cde96da"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/walkor/crontab/zipball/1a37a941e53ca09e9f10f34132001d624cde96da",
+                "reference": "1a37a941e53ca09e9f10f34132001d624cde96da",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": ">=7.0",
+                "workerman/workerman": ">=3.5.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Workerman\\Crontab\\": "./src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "walkor",
+                    "email": "walkor@workerman.net",
+                    "homepage": "http://www.workerman.net",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A crontab written in PHP based on workerman",
+            "homepage": "http://www.workerman.net",
+            "keywords": [
+                "crontab"
+            ],
+            "time": "2021-02-02T12:29:44+00:00"
+        },
+        {
+            "name": "workerman/redis",
+            "version": "v1.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/walkor/redis.git",
+                "reference": "05ee3026a87d36821de1611fe86bdf43a4c04207"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/walkor/redis/zipball/05ee3026a87d36821de1611fe86bdf43a4c04207",
+                "reference": "05ee3026a87d36821de1611fe86bdf43a4c04207",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": ">=5.4",
+                "workerman/workerman": ">=3.5.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Workerman\\Redis\\": "./src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "homepage": "http://www.workerman.net",
+            "time": "2021-04-16T07:38:08+00:00"
+        },
+        {
+            "name": "workerman/redis-queue",
+            "version": "v1.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/walkor/redis-queue.git",
+                "reference": "cbf5264dc80eb5f92e947bf3dddb2718cfbc4efb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/walkor/redis-queue/zipball/cbf5264dc80eb5f92e947bf3dddb2718cfbc4efb",
+                "reference": "cbf5264dc80eb5f92e947bf3dddb2718cfbc4efb",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": ">=5.4",
+                "workerman/redis": "^1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Workerman\\RedisQueue\\": "./src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Message queue system written in PHP based on workerman and backed by Redis.",
+            "homepage": "http://www.workerman.net",
+            "time": "2020-12-30T08:13:08+00:00"
+        },
+        {
+            "name": "workerman/stomp",
+            "version": "v1.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/walkor/stomp.git",
+                "reference": "b5f01335590fcbb4d6a91079c23de153a03645db"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/walkor/stomp/zipball/b5f01335590fcbb4d6a91079c23de153a03645db",
+                "reference": "b5f01335590fcbb4d6a91079c23de153a03645db",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": ">=5.4",
+                "workerman/workerman": ">=3.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Workerman\\Stomp\\": "./src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "homepage": "http://www.workerman.net",
+            "time": "2020-10-27T11:28:05+00:00"
+        },
+        {
+            "name": "workerman/validation",
+            "version": "v3.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/walkor/validation.git",
+                "reference": "9235695b6d4c3c62661aba5b2ab48ff8f2671961"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/walkor/validation/zipball/9235695b6d4c3c62661aba5b2ab48ff8f2671961",
+                "reference": "9235695b6d4c3c62661aba5b2ab48ff8f2671961",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": ">=7.2",
+                "respect/stringifier": "^0.2.0",
+                "symfony/polyfill-mbstring": "^1.2"
+            },
+            "require-dev": {
+                "egulias/email-validator": "^2.1",
+                "malukenho/docheader": "^0.1",
+                "mikey179/vfsstream": "^1.6",
+                "phpstan/phpstan": "^0.12",
+                "phpstan/phpstan-deprecation-rules": "^0.12",
+                "phpstan/phpstan-phpunit": "^0.12",
+                "phpunit/phpunit": "^7.5",
+                "respect/coding-standard": "^2.1",
+                "squizlabs/php_codesniffer": "^3.5",
+                "symfony/validator": "^3.0||^4.0",
+                "zendframework/zend-validator": "^2.1"
+            },
+            "suggest": {
+                "egulias/email-validator": "Strict (RFC compliant) email validation",
+                "ext-bcmath": "Arbitrary Precision Mathematics",
+                "ext-fileinfo": "File Information",
+                "ext-mbstring": "Multibyte String Functions",
+                "symfony/validator": "Use Symfony validator through Respect\\Validation",
+                "zendframework/zend-validator": "Use Zend Framework validator through Respect\\Validation"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Respect\\Validation\\": "library/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Respect/Validation Contributors",
+                    "homepage": "https://github.com/Respect/Validation/graphs/contributors"
+                }
+            ],
+            "description": "The most awesome validation engine ever created for PHP. Respect/Validation 汉化版本",
+            "homepage": "http://respect.github.io/Validation/",
+            "keywords": [
+                "respect",
+                "validation",
+                "validator"
+            ],
+            "time": "2020-08-25T09:26:39+00:00"
         },
         {
             "name": "workerman/webman-framework",
