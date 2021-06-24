@@ -4,22 +4,19 @@ namespace app\controller;
 
 use support\Db;
 use support\Request;
-use Webman\RedisQueue\Client;
+use Webman\Stomp\Client;
 
 class Index
 {
     public function index(Request $request)
     {
-        $user = Db::table('links')->where('name', '白俊遥博客')->first();
-        // 队列名
-        $queue = 'send_mail';
-        // 数据，可以直接传数组，无需序列化
-        $data = ['to' => 'tom@gmail.com', 'content' => 'hello'];
-        // 投递消息
-        Client::send($queue, $data, 10);
-        // 投递延迟消息，消息会在60秒后处理
-        Client::send($queue, $data, 60);
-
+        $user = Db::table('jx_member')->first();
+        $queue = 'examples';
+        // 数据（传递数组时需要自行序列化，比如使用json_encode，serialize等）
+        for ($i = 0; $i <= 10000; $i++) {
+            // 执行投递
+            Client::send($queue, json_encode($user));
+        }
         return json(['code' => 0, 'msg' => 'ok', 'data' => $user]);
     }
 

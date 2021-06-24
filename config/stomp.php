@@ -1,11 +1,11 @@
 <?php
 return [
     'default' => [
-        'host'    => 'stomp://127.0.0.1:61613',
+        'host'    => 'stomp://rabbitmq:61613',
         'options' => [
             'vhost'    => '/',
-            'login'    => 'guest',
-            'passcode' => 'guest',
+            'login'    => 'myuser',
+            'passcode' => 'mypass',
             'debug'    => true,
         ]
     ]

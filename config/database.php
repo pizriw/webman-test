@@ -14,7 +14,7 @@
 
 return [
 
-    'default' => 'oracle',
+    'default' => 'mysql',
 
     'connections' => [
 
@@ -60,17 +60,6 @@ return [
             'username' => env('DB_USERNAME', 'forge'),
             'password' => env('DB_PASSWORD', ''),
             'charset' => 'utf8',
-            'prefix' => '',
-        ],
-        'oracle' => [
-            'driver' => 'oracle',
-            'host' => '47.108.71.213',
-            'port' => '1521',
-            'database' => 'GESOCRM',
-            'username' => 'BFCRMTOWXXCX',
-            'password' => 'WXUSERWXUSER',
-            'unix_socket' => env('DB_SOCKET', ''),
-            'charset' => 'UTF8',
             'prefix' => '',
         ]
     ],

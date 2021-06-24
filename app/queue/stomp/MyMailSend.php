@@ -1,4 +1,5 @@
 <?php
+
 namespace app\queue\stomp;
 
 use Workerman\Stomp\AckResolver;
@@ -20,7 +21,7 @@ class MyMailSend implements Consumer
     public function consume($data, AckResolver $ack_resolver = null)
     {
         // 如果是数据是数组，需要自行反序列化
-        var_export(json_decode($data, true)); // 输出 ['to' => 'tom@gmail.com', 'content' => 'hello']
+        var_dump(json_decode($data, true)); // 输出 ['to' => 'tom@gmail.com', 'content' => 'hello']
         // 告诉服务端，已经成功消费
         $ack_resolver->ack(); // ack为 auto时可以省略此调用
     }
