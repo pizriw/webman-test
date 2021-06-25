@@ -46,7 +46,7 @@ return [
     ],
     'redis_consumer'  => [
         'handler'     => Webman\RedisQueue\Process\Consumer::class,
-        'count'       => 2, // 可以设置多进程
+        'count'       => 10, // 可以设置多进程
         'constructor' => [
             // 消费者类目录
             'consumer_dir' => app_path() . '/queue/redis'
@@ -54,7 +54,7 @@ return [
     ],
     'stomp_consumer'  => [
         'handler'     => Webman\Stomp\Process\Consumer::class,
-        'count'       => 2, // 进程数
+        'count'       => 20, // 进程数
         'constructor' => [
             // 消费者类目录
             'consumer_dir' => app_path() . '/queue/stomp'
